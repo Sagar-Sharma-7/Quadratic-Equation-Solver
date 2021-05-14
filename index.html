@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <link rel="shortcut icon" href="./public/img/logo.png" type="image/png">
+    <title>Quadratic Equation Solver</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1></h1>
+
+        <div class="box1">
+            <div class="formula">
+            </div>
+            <div class="equation">
+                <form>
+                    <div class="inputs">
+                        <input type="number" id="a" class="inp" placeholder="a">x<sup>2</sup>&ensp;+ &ensp;
+                        <input type="number" id="b" class="inp" placeholder="b">x&ensp;+ &ensp; 
+                        <input type="number" id="c" class="inp" placeholder="c">&ensp;=&ensp; 0
+                    </div>
+                    <input type="submit" value="Find Roots" id="calculateBtn">
+                </form>
+            </div>
+            <div class="resultGlowBox">
+                <div id="realUneq" class="glowBox"></div>
+                <div id="realEq" class="glowBox"></div>
+                <div id="unreal" class="glowBox"></div>
+            </div>
+            <div class="resultBox">
+                
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="./public/js/main.js"></script>
+</body>
+</html>

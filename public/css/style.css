@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    color: #fff;
+}
+
+body{
+    background: linear-gradient(145deg, #6fc5e7, #752bff);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba( 255, 255, 255, 0.15 );
+    backdrop-filter: blur( 7.0px );
+    -webkit-backdrop-filter: blur( 7.0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    width: 60vw;
+}
+
+h1{
+    font-size: 4vw;
+    margin: 2vh 2vw;
+    color: #1e1e1e;
+}
+
+.box1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 50vh;
+}
+
+.formula{
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 0vh 2vw;
+}
+
+.inputs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inp{
+    width: 50px;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #fff;
+}
+
+.equation{
+    width: 100%;
+}
+
+#calculateBtn{
+    width: 100%;
+    margin:3vh 0vw;
+    background-color: #1e1e1e;
+    border: none;
+    outline: none;
+    padding: 1vh 0vw;
+    cursor: pointer;
+}
+
+.resultGlowBox{
+    margin-top: 2vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.resultGlowBox > div{
+    font-size: 0.8rem;
+    text-align: center;
+    width: 30%;
+    padding: 1vh 1vw;
+    background: rgba( 255, 255, 255, 0.15 );
+    backdrop-filter: blur( 7.0px );
+    -webkit-backdrop-filter: blur( 7.0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    opacity: 0.5;
+}
+
+.resultBox{
+    text-align: center;
+}
+
+#calculateBtn:hover{
+    color: #7381ff;
+}
+
+@media all and (max-width: 600px){
+    h1{
+        font-size: 2rem;
+        text-align: center;
+        border-bottom:2px solid #000 ;
+    }
+    .container{
+        width: 100vw;
+        height: 100vh;
+    }
+    .box1{
+        height: 80vh;
+    }
+    .formula{
+        font-size: 1.6rem;
+    }
+    .equation{
+        font-size: 1.2rem;
+    }
+    .inp{
+        font-size: 1.6rem;
+    }
+    #calculateBtn{
+        padding: 3vh 0vw;
+        font-size: 2.5vw;
+    }
+}
+
+@media all and (max-height: 350px){
+    body{
+        height: 200vh;
+    }
+    h1{
+        font-size: 2rem;
+        text-align: center;
+        border-bottom:2px solid #000 ;
+    }
+    .container{
+        height: 200vh;
+    }
+
+    .box1{
+        height: 160vh;
+    }
+}
