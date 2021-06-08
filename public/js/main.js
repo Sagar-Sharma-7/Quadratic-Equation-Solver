@@ -9,6 +9,7 @@ const realUneq = document.querySelector("#realUneq");
 const realEq = document.querySelector("#realEq");
 const unreal = document.querySelector("#unreal");
 const resultBox = document.querySelector(".resultBox");
+const discriminantBox = document.querySelector(".discriminant");
 let root1, root2;
 
 // text content
@@ -31,6 +32,7 @@ const getRoots = (e) => {
     const discriminant = (b*b) - (4*a*c);
     console.log(a, b, c);
     console.log(discriminant);
+    discriminantBox.innerHTML = `Discriminant: ${discriminant}`;
 
     // for real and different roots
     if(discriminant > 0){
